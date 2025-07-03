@@ -1,3 +1,6 @@
+import os
+port = int(os.environ.get('PORT', 3000))
+app.run(host='0.0.0.0', port=port)
 import numpy as np
 import pandas as pd
 from flask import Flask, render_template, request
